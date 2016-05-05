@@ -1,5 +1,6 @@
-// Copyright (c) 2014 - present Adobe Systems Incorporated. All rights reserved.
-//
+//theme.less
+
+// -------------------------  MIT License  --------------------------------
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the "Software"),
 // to deal in the Software without restriction, including without limitation
@@ -17,12 +18,20 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 // DEALINGS IN THE SOFTWARE.
+//-------------------------------------------------------------------------
 
+
+// --------------  Contribuators  ---------------
 // Style definitions are from
 // https://github.com/chriskempson/tomorrow-theme/tree/master/Brackets
 
-/*
- * Brackets Default Theme
+// Original Dark Theme provided by Adobe Corporation.
+// https://github.com/adobe/brackets/blob/master/src/extensions/default/DarkTheme/main.less
+
+
+/* 
+ * Original Theme based on "Brackets Default Theme by Adobe Corporation"
+ * Customized By: Rolando Zabala II <rzabala02@gmail.com>
  *
  * Defines all the variables that one can configure in a theme. This should
  * contain all variables / mixins for UI styling that we want to be able to
@@ -32,14 +41,19 @@
  * variable names that are on the LHS of the list below. So, if we
  * need a new color for some UI element, we should add a variable
  * in this file.
- */
+ * /
+
+
 
 /* Define some variables used in multiple places */
-@background: #1d1f21;
-@foreground: #ddd;
+@background: #161f29;       //Changed value of background to dark navy from black.
+@foreground: #adadac;
+
 
 /* Code Styling */
+//Brackets color scheme when it boots up with NO FILE Active.
 
+//Background & Foreground
 .CodeMirror, .CodeMirror-scroll {
     background-color: @background;
     color: @foreground;
@@ -63,29 +77,30 @@
     }
 }
 
-.cm-atom, .cm-string, .cm-string-2, .cm-hr {color: #d89333;}
+
+//Keywords, Elements, Properities, Values, Strings
+.cm-atom, .cm-string, .cm-string-2, .cm-hr {color: #0eb25a;}     //Values of a property for an element.
 .cm-number, .cm-attribute, .cm-plus {color: #85a300;}
-.cm-def, .cm-property {color: #b77fdb;}
+.cm-def, .cm-property {color: #d0bb46;}
 .cm-variable, .cm-variable-2, .cm-variable-3, .cm-operator, .cm-meta, .cm-bracket {color: @foreground;}
-.cm-comment {color: #767676;}
+.cm-comment {color: #c3c1b5;}         //Comments
 .cm-error, .cm-minus {color: #dc322f;}
 .cm-header {color: #d85896;}
-.cm-link {color: #b77fdb; text-decoration: none;}
+.cm-link {color: #b77fdb; text-decoration: underline;}
 .cm-rangeinfo {color: #6c71c4;}
-.cm-keyword, .cm-qualifier, .cm-builtin, .cm-tag, .cm-quote {color: #6c9ef8;}
+.cm-keyword, .cm-qualifier, .cm-builtin, .cm-tag, .cm-quote {color: #6dbcdb;}     //Keywords
+
 
 /* Extra CSS */
-
 .CodeMirror-searching {
-    background-color: #d3cd69;
+    background-color: #07f2fc;     //Search & Highlight
     &.searching-current-match {
-        background-color: #f6a644;
+        background-color: #177ca8;
     }
 }
 
-
 .CodeMirror-cursor {
-    border-left: 1px solid #c5c8c6 !important;
+    border-left: 1px solid #596c0a !important;
 }
 
 .CodeMirror-gutters {
@@ -101,7 +116,7 @@
     background: #333f48;
 }
 .CodeMirror-focused .CodeMirror-selected {
-    background: #0050a0;
+    background: #034c95;
 }
 
 .CodeMirror-matchingbracket, .CodeMirror-matchingtag {
@@ -115,6 +130,8 @@
     border-bottom: 1px solid #fff;
 }
 
+
+
 /*
     CodeMirror's use of descendant selectors for certain styling causes problems when editors are
     nested because, for items in the inner editor, the left-hand clause in the selector will now
@@ -125,6 +142,8 @@
     that uses a descandant selector where the CSS class name to the left of the space is something
     other than a vanilla .CodeMirror)
  */
+
+
 .CodeMirror {
     .CodeMirror {
         background: transparent;
@@ -175,8 +194,8 @@
     background-color: #444;
 }
 
-/* Non-editor styling */
 
+/* Non-editor styling */
 .image-view,
 .not-editor {
     background-color: @background;
