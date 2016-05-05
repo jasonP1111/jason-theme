@@ -1,6 +1,6 @@
 {
-    "name": "jason.cool-theme",
-    "title": "My Cool Theme",
+    "name": "jason_theme",
+    "title": "Jason Cool Theme",
     "description": "This is the first theme that I created.",
     "homepage": "https://github.com/jasonP1111/jason-theme",
     "version": "1.0.0",
@@ -11,6 +11,5 @@
         "dark": true,
         "addModeClass": true
     },
-    "keywords": ["theme", "jason", "jason's", "My", "cool", "theme", "first", "theme"], 
-    "contributers": "Jason Poon jpoon@mail.ccsf.edu (https://github.com/jasonP1111/jason-themes)",
+    "keywords": ["theme, jason, jason's, My, cool, theme, first, theme"]
 }
