@@ -1,4 +1,4 @@
-#project-files-container [data-extension=".js"] { color: #fff; }
+#project-files-container [data-extension=".js"] { color: #90c276; }
 #project-files-container [data-extension=".md"] { color: #78b4c4; }
 #project-files-container [data-extension=".json"] { color: #b17bc7; }
 #project-files-container [data-extension=".cson"] { color: #c67dc9; }
@@ -21,4 +21,3 @@
 #project-files-container [data-extension=".htaccess"] { color: #e16178; }
 #project-files-container [data-extension=".module"] { color: #e1c761; }
 #project-files-container [data-extension=".xml"] { color: #a9e161; }
-
