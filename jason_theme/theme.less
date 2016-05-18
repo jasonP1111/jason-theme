@@ -46,8 +46,8 @@
 
 
 /* Define some variables used in multiple places */
-@background: #161f29;       //Changed value of background to dark navy from black.
-@foreground: #adadac;
+@background: #5A5B5C;       //Changed value of background to dark navy from black.
+@foreground: #CACECF;       //Changed value of foreground reg text to dark navy from black.
 
 
 /* Code Styling */
@@ -60,7 +60,7 @@
 }
 
 .CodeMirror-focused .CodeMirror-activeline-background {
-    background: #2f2f2f;
+    background: #424242;
 }
 
 .show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
@@ -68,34 +68,46 @@
 }
 
 .CodeMirror-focused .CodeMirror-activeline {
+        border:1px solid #FC7272;
     .CodeMirror-gutter-elt {
-        background: rgba(0, 0, 0, 0.2);
-        color: #fff;
+        background: rgba(42, 42, 42, 0.7);
+        color: #FC7272;
     }
     .inline-widget .CodeMirror-gutter-elt {
-        color: #767676;    
+        color: #7A7A7A;    
     }
 }
 
+.CodeMirror-vscrollbar{
+//    box-shadow:  0 0 0px #fff inset;
+}
+
+
+
 
 //Keywords, Elements, Properities, Values, Strings
-.cm-atom, .cm-string, .cm-string-2, .cm-hr {color: #0eb25a;}     //Values of a property for an element.
-.cm-number, .cm-attribute, .cm-plus {color: #85a300;}
+.cm-atom, .cm-string, .cm-string-2, .cm-hr {color: #ECF547;}     //Values of a property value for an element.
+.cm-number, .cm-attribute, .cm-plus {color: #E483F7;}           //Values of a property numberic values for an element. 
 .cm-def, .cm-property {color: #d0bb46;}
 .cm-variable, .cm-variable-2, .cm-variable-3, .cm-operator, .cm-meta, .cm-bracket {color: @foreground;}
-.cm-comment {color: #c3c1b5;}         //Comments
+
+.cm-comment {color: #9A9C73;}         //Comments
 .cm-error, .cm-minus {color: #dc322f;}
 .cm-header {color: #d85896;}
 .cm-link {color: #b77fdb; text-decoration: underline;}
 .cm-rangeinfo {color: #6c71c4;}
-.cm-keyword, .cm-qualifier, .cm-builtin, .cm-tag, .cm-quote {color: #6dbcdb;}     //Keywords
+.cm-keyword, .cm-qualifier, .cm-builtin, .cm-tag, .cm-quote {color: #26CED1;}     //Keywords
+.cm-tag {color: #61C454;}               //html tag editor
+.cm-m-javascript.cm-variable, .cm-m-javascript.cm-variable-2 { color: #EEF522;}
+.cm-m-javascript.cm-string { color: #fff;}
+
 
 
 /* Extra CSS */
 .CodeMirror-searching {
-    background-color: #07f2fc;     //Search & Highlight
+    background-color: #60CC5C;     //Search & Highlight
     &.searching-current-match {
-        background-color: #177ca8;
+        background-color: #fff;
     }
 }
 
@@ -109,11 +121,11 @@
 }
 
 .CodeMirror-linenumber {
-    color: #767676;
+    color: #7DBF2C;
 }
 
 .CodeMirror .CodeMirror-selected {
-    background: #333f48;
+    background: #D98818;
 }
 .CodeMirror-focused .CodeMirror-selected {
     background: #034c95;
@@ -176,7 +188,7 @@
 }
 
 .CodeMirror-foldgutter-open:after {
-    color: #666;
+    color: #fff;
 }
 .CodeMirror-foldgutter-folded:after {
     color: #aaa;
@@ -204,3 +216,7 @@
 .view-pane .image-view {
     color: @foreground;
 }
+
+
+
+
