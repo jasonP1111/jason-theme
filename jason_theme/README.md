@@ -13,3 +13,10 @@ Orange - provides a sense of warmth and happiness. With a combination of the sti
 
 More on Colors Here : http://www.empower-yourself-with-color-psychology.com/meaning-of-colors.html
 
+I am using Less which is completely different from Sass
+
+Less runs on javascript while Sass runs on ruby
+Less advantage is that it have a guarded mixins instead of using If else statements
+Less require an ajax call which is not inconvient since it requires you to make an ajax call
+Less als uses the @ instead of the $ from Sass
+
